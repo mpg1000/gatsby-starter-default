@@ -85,6 +85,28 @@ const IndexPage = () => (
         Welcome to <b>Investor Relations AI Bot</b>
       </h1>
       <p className={styles.intro}>
+	  
+	      <form onSubmit={handleSubmit}>  
+      <label>  
+        Select an item:  
+        <select value={selectedItem} onChange={handleSelectChange}>  
+          <option value="">Select...</option>  
+          <option value="Google">Google</option>  
+          <option value="Microsoft">Microsoft</option>  
+          <option value="SAP">SAP</option>  
+        </select>  
+      </label>  
+      <br />  
+      <label>  
+        Text area:  
+        <textarea />  
+      </label>  
+      <br />  
+      <button type="submit">Submit</button>  
+    </form>  
+	  
+	  
+	  
         <b>Example pages:</b>{" "}
         {samplePageLinks.map((link, i) => (
           <React.Fragment key={link.url}>
